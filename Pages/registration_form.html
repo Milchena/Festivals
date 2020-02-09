@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Gupter&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="../CSS/Page10.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Фестивали</title>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+    </script>
+    <script type="text/javascript">(function(){emailjs.init("user_dvDV0s7AizZxG97qmDpqQ")})();
+   
+    function submitForm(event){
+        event.preventDefault();
+        emailjs.sendForm('gmail', 'template_jPc7eO2a', '#registration', 'user_dvDV0s7AizZxG97qmDpqQ')
+        .then(function(response) {
+       alert("Вашият имейл е изпратен успешно!");
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+        alert("Email sending failed");
+       console.log('FAILED...', error);
+    });
+    }
+    
+    </script>
+</head>
+<body>
+    <div class="menu">
+        <div>
+            <a href="" class="ln">BG</a><a href="" class="ln">EN</a>
+        </div>
+    </div>
+    <div class="header">
+        <img src="../Photos/talent.png" alt="CompanyLogo">
+    </div>
+    <div class="topnav">
+        <a href="../index.html">Начало</a>
+        <a href="./festivals.html">Фестивали</a>
+        <a class="active" href="./registration_form.html">Записване за участие</a>
+        <a href="../Pages/contacts.html">Контакти</a>
+    </div>
+    <form action="javascript:void(0);" method="POST" id="registration"  onsubmit="submitForm(event)" style="border:1px solid #ccc"
+     >
+    <div class="container">
+        <h1>Заявка за участие във фестивала:</h1>
+      <hr>
+  
+      <label for="Festival_name"><b>Име на фестивала, в който участвате:</b></label>
+      <input type="text" placeholder="Име" name="Festival_name" required>
+  
+      <label for="Club_name"><b>Имена на школата или клуба:</b></label>
+      <input type="text" placeholder="Име" name="Club_name" required>
+  
+      <label for="Vedomstvo"><b>Ведомство, което представляват:</b></label>
+      <input type="text" placeholder="/ОДК, ЦДР, Школа, МКЦ, Читалище и др./" name="Ved">
+
+      <label for="City"><b>Населено място:</b></label>
+      <input type="text" placeholder="Град/Село" name="City" required>
+  
+      <label for="Age_group"><b>Възрастова група:</b></label>
+      <input type="text" placeholder="I/II/III" name="Age_group" required>
+  
+      <label for="Mentor_name"><b>Име на ръководителя:</b></label>
+      <input type="text" placeholder="Име" name="Mentor_name" required>
+
+      <label for="Contacts"><b>Контакти:</b></label>
+      <input type="text" placeholder="/тел./GSM, e-mail/" name="Contacts">
+  
+      <label for="Music/Dance"><b>НАПРАВЛЕНИЕ:</b></label>
+      <input type="text" placeholder="/Музика или танци/" name="Music/Dance">
+  
+      <label for="Category"><b>Категория:</b></label>
+      <input type="text" placeholder="/соло, дует, малка група, група, ансамбъл/" name="Category">
+
+      <p><strong>РЕПЕРТОАР:</strong></p>
+      
+      <label for="Repertoire_name"><b>Име на изпълнението:</b></label>
+      <input type="text" name="Repertoire_name">
+
+      <label for="Repertoire_age"><b>Възрастова група:</b></label>
+      <input type="text" name="Repertoire_age">
+     
+      <label for="Repertoire_number"><b>Брой изпълнители:</b></label>
+      <input type="text" name="Repertoire_number" >
+      
+      <label for="Repertoire_genre"><b>ЖАНР:</b></label>
+      <input type="text" name="Repertoire_genre">
+
+      <label for="Repertoire_time"><b>Времетраене на изпълнението:</b></label>
+      <input type="text" name="Repertoire_time">
+
+      <label for="Participans_number"><b>Брой участници:</b></label>
+      <input type="text" name="Participans_number">
+
+      <label for="Technical_tools"><b>Необходими технически средства – брой микрофони, столове и др.,това не включва музикални инструменти:</b></label>
+      <input type="text" name="Tehnical_tools">
+
+      <label for="email"><b>Вашият имейл</b></label>
+      <input type="text" name="email" required> 
+
+      <p style="text-align: left;"><strong>*Музиката да бъде на флашка или CD носител</strong></p>
+      <div class="clearfix">
+        <button type="submit"
+          class="signupbtn">Изпрати</button>
+      </div>
+    </div>
+<div class="footer">
+    <p><a href=""></a></p>
+</div>  
+</body>
+</html>

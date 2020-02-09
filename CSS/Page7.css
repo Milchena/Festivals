@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+  
+.header {
+  background-color: rgb(255, 255, 255);
+  padding: 0.5em;
+  text-align: center;
+}
+.header img{
+  width: 19em; 
+  height: 9em;
+}
+  
+.topnav {
+  width: 100%;
+  overflow: auto;
+  background-color:rgb(227, 227, 235);
+  font-family: 'Gupter', serif;
+  border: rgb(233, 233, 235) solid 5px;
+}
+.topnav a.active {
+  background-color: #aaaaaa;
+  border-radius: 8px;
+
+}
+.topnav a:hover:not(.active) {
+  background-color: #aaaaaa;
+  border-radius: 8px;
+
+} 
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  font-size: 1.1em;
+  padding: 0.8em 0.9em;
+  text-decoration: none;
+  background-color: rgb(227, 227, 235);
+
+}
+
+.topnav a:hover {
+  background-color: #aaaaaa;
+  border-radius: 8px;
+}
+@media screen and (max-width: 500px) {
+  .topnav a {
+    float: none;
+    display: block;
+  }
+}
+.navbar {
+  overflow: hidden;
+  height: 90%;
+  margin: 1em;
+}
+  
+.navbar a{ 
+  float: left;;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 0.5px 0.6px;
+  text-decoration: none;
+  font-size: 18.5em;
+  border-radius: 8px;
+}
+
+.navbar a:hover {
+  color: (255, 255, 255);
+  -webkit-box-shadow: 0px 0px 9px 9px rgba(178,177,184,0.86);
+  -moz-box-shadow: 0px 0px 9px 9px rgba(178,177,184,0.86);
+  box-shadow: 0px 0px 9px 9px rgba(178,177,184,0.86);
+}
+
+.navbar a.active {
+  color: (255, 255, 255);
+  border: rgb(196, 195, 204) solid 2px;
+  -webkit-box-shadow: 0px 0px 9px 9px rgba(178,177,184,0.86);
+  -moz-box-shadow: 0px 0px 9px 9px rgba(178,177,184,0.86);
+  box-shadow: 0px 0px 9px 9px rgba(178,177,184,0.86);
+}
+.navbar a:hover:not(.active) {
+  border: rgb(196, 195, 204) solid 2px;
+  -webkit-box-shadow: 0px 0px 9px 9px rgba(178,177,184,0.86);
+  -moz-box-shadow: 0px 0px 9px 9px rgba(178,177,184,0.86);
+  box-shadow: 0px 0px 9px 9px rgba(178,177,184,0.86);
+}
+  
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+a.ln:link, a.ln:visited {
+  background-color: rgb(226, 226, 228);
+  color: rgb(0, 0, 0);
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: bold;
+  float: right;
+  border-radius: 5px;
+  font-family: 'Gupter', serif;
+  border: 2px solid rgb(233, 231, 231);
+}
+  
+a.ln:hover, a.ln:active {
+  background-color: #aaaaaa;
+  color: rgb(0, 0, 0); 
+  border: 2px solid  #acaecc;
+}
+h1{
+  font-size:100%;
+  float: center;
+}
+p{
+  font-size:100%;
+  float: center;
+}
+.navbar a{
+  border: 2px solid rgb(183, 183, 201);
+  padding: 0.01em;
+  margin: 0.01em;
+}
+
+.img2 {
+  float: left;
+}
+
+.clearfix {
+  display: inline;
+}
+.Festival1{
+  color: rgb(0, 0, 0);
+  font-family: 'Gupter', serif;
+  text-decoration-line: none;
+  font-size: 0.06em;
+}
+.F1 .menu{
+  color: black;
+}
+.F3 .menu{
+  color: black;
+}
+.F4 .menu{
+  color: rgb(255, 238, 238);
+}
+.F5 .menu{
+  color: rgb(255, 255, 255);
+}
+.Festival2{  
+  color: #ffffff;
+  font-family: 'Gupter', serif;
+  text-decoration-line: none;
+  font-size: 0.06em;
+}
+.Festival3{
+  color: rgb(0, 0, 0);
+  font-family: 'Gupter', serif;
+  text-decoration-line: none;
+  font-size: 0.06em;
+}
+.Festival4{
+  color: rgb(255, 238, 238);
+  font-family: 'Gupter', serif;
+  text-decoration-line: none;
+  font-size: 0.06em;
+}
+.Festival5{
+  color: rgb(255, 255, 255);
+  font-family: 'Gupter', serif;
+  text-decoration-line: none;
+  font-size: 0.06em;
+}
+#clearfix {
+  float: left;
+  padding: 0.8em;
+  height: 10em;
+}
+.navbar:after {
+  content: normal;
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  #clearfix {
+    width: 100%;
+  }
+}
+
+h1{
+  color: rgb(45, 31, 129);
+  text-align: center;
+  font-family: 'Gupter', serif;
+  text-decoration: underline;
+}
+h2{
+  color: rgb(45, 31, 129);
+  text-align: center;
+  font-family: 'Gupter', serif;
+}
+h3{
+  color: rgb(45, 31, 129);
+  text-align: center;
+  font-family: 'Gupter', serif;
+  text-decoration: underline;
+}
+p{
+  text-align: center;
+  font-family: 'Gupter', serif;
+  font-size: large;
+}
+.menu{
+  font-size: 0.0555em;
+  font-family: 'Gupter', serif;
+  line-height: 5px;
+  text-align: center;
+}
+ul{
+  font-family: 'Gupter', serif;
+  font-size: large;
+  text-align: left;
+  position: relative;
+}
+.table{
+  overflow-x: auto;
+}
+.Photo img{
+  float: left;
+  margin: 2% 5% 5% 0;
+  -webkit-box-shadow: 0px 0px 9px 9px rgba(178,177,184,0.86);
+  -moz-box-shadow: 0px 0px 9px 9px rgba(178,177,184,0.86);
+  box-shadow: 0px 0px 9px 9px rgba(178,177,184,0.86);
+  position: relative;
+}
+.container{
+  margin: 1vw;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+.F1 a{
+  background-color: rgb(255, 219, 74); 
+}
+.F2 a{
+  background-color: #353535; 
+}
+.F3 a{
+  background-color: rgb(36, 187, 247); 
+}
+.F4 a{
+  background-color: rgb(219, 2, 9);
+}
+.F5 a{
+  background-color: rgb(236, 19, 66);
+}

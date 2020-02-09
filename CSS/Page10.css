@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+}
+  
+.header {
+  background-color: rgb(255, 255, 255);
+  padding: 0.5em;
+  text-align: center;
+}
+.header img{
+  width: 19em; 
+  height: 9em;
+}
+  
+.topnav {
+  width: 100%;
+  overflow: auto;
+  background-color:rgb(227, 227, 235);
+  font-family: 'Gupter', serif;
+  border: rgb(233, 233, 235) solid 5px;
+}
+  
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  font-size: 1.1em;
+  padding: 0.8em 0.9em;
+  text-decoration: none;
+  background-color: rgb(227, 227, 235);
+}
+
+.topnav a:hover {
+  background-color: #aaaaaa;
+  border-radius: 8px;
+}
+@media screen and (max-width: 500px) {
+  .topnav a {
+    float: none;
+    display: block;
+  }
+}
+.topnav a.active {
+  background-color: #aaaaaa;
+  border-radius: 8px;
+
+}
+.topnav a:hover:not(.active) {
+  background-color: #aaaaaa;
+  border-radius: 8px;
+
+}
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+a.ln:link, a.ln:visited {
+  background-color: rgb(226, 226, 228);
+  color: rgb(0, 0, 0);
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: bold;
+  float: right;
+  border-radius: 5px;
+  font-family: 'Gupter', serif;
+  border: 2px solid rgb(233, 231, 231);
+}
+  
+a.ln:hover, a.ln:active {
+  background-color: #aaaaaa;
+  color: rgb(0, 0, 0); 
+  border: 2px solid  #acaecc;
+}
+
+input[type=text]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: rgb(76, 102, 175);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .signupbtn {
+     width: 100%;
+  }
+}
+h1{
+  color: rgb(72, 72, 160);
+  font-family: 'Gupter', serif;
+}

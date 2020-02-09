@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+  
+.header {
+  background-color: rgb(255, 255, 255);
+  padding: 0.5em;
+  text-align: center;
+}
+.header img{
+  width: 19em; 
+  height: 9em;
+}
+  
+.topnav {
+  width: 100%;
+  overflow: auto;
+  background-color:rgb(227, 227, 235);
+  font-family: 'Gupter', serif;
+  border: rgb(233, 233, 235) solid 5px;
+}
+.topnav a.active {
+  background-color: #aaaaaa;
+  border-radius: 8px;
+
+}
+.topnav a:hover:not(.active) {
+  background-color: #aaaaaa;
+  border-radius: 8px;
+
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  font-size: 1.1em;
+  padding: 0.8em 0.9em;
+  text-decoration: none;
+  background-color: rgb(227, 227, 235);
+
+}
+
+.topnav a:hover {
+  background-color: #aaaaaa;
+  border-radius: 8px;
+}
+@media screen and (max-width: 500px) {
+  .topnav a {
+    float: none;
+    display: block;
+  }
+}
+ 
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+a.ln:link, a.ln:visited {
+  background-color: rgb(226, 226, 228);
+  color: rgb(0, 0, 0);
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: bold;
+  float: right;
+  border-radius: 5px;
+  font-family: 'Gupter', serif;
+  border: 2px solid rgb(233, 231, 231);
+}
+  
+a.ln:hover, a.ln:active {
+  background-color: #aaaaaa;
+  color: rgb(0, 0, 0); 
+  border: 2px solid  #acaecc;
+}
+
+.info a:link {
+  color: rgb(63, 85, 160);
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+  float: center;
+  margin: 0 0.8em;
+}
+  
+.info a:hover, a:active {
+    background-color: rgb(184, 181, 181);
+  }
+}   
+.image img{
+  margin: 0;
+}
+h2{
+  color: rgb(36, 72, 148);
+  font-family: 'Gupter', serif;
+  margin: 0.7em;
+  font-size: 1.7em;
+}
+p{
+  font-family: 'Gupter', serif;
+  margin: 1em;
+  font-size: 1.1em
+}
+h3{
+  font-family: 'Gupter', serif;
+  margin: 1em;
+  font-size: 1.3em;
+  color: rgb(63, 85, 160);
+}
+.image img{
+  display: block;
+  margin-left: 0.5em;
+  margin-right: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width: 80%;
+}
